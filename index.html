@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <div class="square">
+    <div class="container-1">
+      <div class="date-container">
+        <div class="box1">
+          <div id="day-field">DAY</div>
+          <div><input id="date-input" placeholder="DD" type="number" min="1" max="31" step="1" class="no-spinner">
+          </div>
+          <div id="error-Message1"></div>
+        </div>
+        <div class="box1">
+          <div id="month-field">MONTH</div>
+          <div><input id="month-input" placeholder="MM" type="number" min="0" max="31" step="1" class="no-spinner">
+          </div>
+          <div id="error-Message2"></div>
+        </div>
+        <div class="box1">
+          <div id="year-field">YEAR</div>
+          <div><input id="year-input" placeholder="YYYY" type="number" min="0" max="31" step="1" class="no-spinner">
+          </div>
+          <div id="error-Message3"></div>
+        </div>
+      </div>
+
+      <button onclick="checkDate()" class="arrow-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div id="horizontal-line"></div>
+
+    <div class="container-2">
+      <div class="result-container">
+        <div class="box2">
+          <div id="difference-year-field">- -</div>
+          <div class="year-field">years</div>
+        </div>
+        <div class="box2">
+          <div id="difference-month-field">- -</div>
+          <div class="year-field">months</div>
+        </div>
+        <div class="box2">
+          <div id="difference-day-field">- - </div>
+          <div class="year-field">days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Madhav Mishra 🎉</a>.
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>

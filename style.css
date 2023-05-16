@@ -1,0 +1,336 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 1%, 44%);
+    font-weight: lighter;
+}
+
+.square {
+    width: 584px;
+    height: 538px;
+    border-radius: 17px 17px 139px 17px;
+    background-color: white;
+    position: absolute;
+    top: 23%;
+    left: 34%;
+    transform: translate(-50px, -50px);
+}
+
+.attribution {
+    bottom: 0;
+    z-index: 1;
+    font-weight: lighter;
+    color: hsl(0, 1%, 44%);
+    font-size: 13px;
+    text-decoration: auto;
+    background-color: hsl(0, 0%, 86%);
+    border-radius: 7px;
+    padding: 6px;
+    margin: 710px 10px 0px 509px;
+    width: 407px;
+}
+
+.container-1 {
+    position: relative;
+    z-index: 1;
+    width: 584px;
+    height: 127px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.container-2 {
+    height: 538px;
+    border-radius: 17px 17px 139px 17px;
+    margin: 0;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: row;
+    width: 414px;
+    height: 100px;
+    margin: 27px 10px 10px 34px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    aspect-ratio: 1/1;
+}
+
+#date-input {
+    width: 76px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 8px;
+    margin: 6px 10px 10px 0px;
+    padding: 17px;
+    font-size: 24px;
+    padding-right: 21px;
+    font-weight: bolder;
+    color: hsl(0, 1%, 44%);
+}
+
+#date-input:focus {
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+    font-size: 26px;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+#month-input {
+    width: 76px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 8px;
+    margin: 6px 10px 10px 0px;
+    padding: 17px;
+    font-size: 24px;
+    padding-right: 21px;
+    font-weight: bolder;
+    color: hsl(0, 1%, 44%);
+}
+
+#month-input:focus {
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+    font-size: 26px;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+#year-input {
+    width: 76px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 8px;
+    margin: 6px 10px 10px 0px;
+    padding: 17px;
+    font-size: 24px;
+    padding-right: 21px;
+    font-weight: bolder;
+    color: hsl(0, 1%, 44%);
+}
+
+#year-input:focus {
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+    font-size: 26px;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+#day-field {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+#month-field {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+#year-field {
+    color: hsl(0, 1%, 44%);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+
+.arrow-container {
+    position: relative;
+    z-index: 5;
+    margin: 108px 10px 10px 31px;
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 61px;
+    padding: 14px;
+    border-radius: 40px;
+    border: none;
+}
+
+#horizontal-line {
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    margin: 10px 86px 4px 33px;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    width: 405px;
+    height: 330px;
+    margin: 30px 10px 10px 33px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.box2 {
+    width: 405px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    aspect-ratio: 1/1;
+}
+
+#difference-year-field {
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 73px;
+    font-style: italic;
+    font-weight: bold;
+    color: hsl(259, 100%, 65%);
+    margin-right: 9px;
+}
+
+#difference-month-field {
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 73px;
+    font-style: italic;
+    font-weight: bold;
+    color: hsl(259, 100%, 65%);
+    margin-right: 9px;
+}
+
+#difference-day-field {
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 73px;
+    font-style: italic;
+    font-weight: bold;
+    color: hsl(259, 100%, 65%);
+    margin-right: 9px;
+}
+
+.year-field {
+    width: 297px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 73px;
+    font-style: italic;
+    font-weight: bold;
+    color: hsl(0, 0%, 8%);
+}
+
+#error-Message1 {
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-style: italic;
+}
+
+#error-Message2 {
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-style: italic;
+}
+
+#error-Message3 {
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 370px) and (max-width: 770px) {
+    .square {
+        width: 494px;
+        height: 691px;
+        border-radius: 17px 17px 201px 17px;
+        margin-left: 5px;
+    }
+
+    .arrow-container {
+        position: relative;
+        z-index: 5;
+        margin: 168px 19px 10px -248px;
+        height: 76px;
+        width: 76px;
+
+    }
+
+    .container-1 {
+        position: relative;
+        z-index: 1;
+        margin: 9px 0px 78px 0px;
+    }
+
+    #date-input {
+        width: 78px;
+        height: 37px;
+        margin-left: 10px;
+    }
+
+    #month-input {
+        width: 78px;
+        height: 37px;
+        margin-left: 17px;
+    }
+
+    #year-input {
+        width: 78px;
+        height: 37px;
+        margin-left: 25px;
+    }
+
+    #day-field {
+        font-size: 16px;
+        margin-left: 11px;
+    }
+
+    #month-field {
+        font-size: 16px;
+        margin-left: 18px;
+    }
+
+    #year-field {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+
+    .container-2 {
+        margin-top: 80px;
+    }
+    .attribution{
+        margin: 875px 10px 0px 106px
+    }
+}
